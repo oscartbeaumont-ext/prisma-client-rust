@@ -41,7 +41,7 @@ jobs:
     
     - name: Instal libssl (Ubuntu)
       if: matrix.os == 'ubuntu-latest'
-      run: sudo apt-get install libssl-dev
+      run: sudo apt-get install libssl-dev pkg-config
     
     - name: Install Rust toolchain
       uses: actions-rs/toolchain@v1
